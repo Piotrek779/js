@@ -1,29 +1,69 @@
 <html>
+ <head>
+ <title> 6 </title>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="inf.css">
-    <title>Przykład nr tutaj wpisz odpowiedni nume </title>
-    <script language="JavaScript">
-        function WinOpen() {
-            window.open("obraz.html", "okienko", "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
-        }
-    </script>
-</head>
+ <script language="JavaScript">
+ function WinOpen()
+ {
+    window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+ }
+ function WinOpen1()
+ {
+    window.open("obraz1.html","okienko1","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=500");
+ }
+ function WinOpen2()
+ {
+    window.open("obraz2.html","okienko2","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=800");
+ }
+ function WinOpen3()
+ {
+    window.open("obraz3.html","okienko3","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=1100");
+ }
+ function rodzajeOkienek()
+ {
+    window.open("okienka.html","rodzaje okienek","toolbar=no,directories=no,menubar=no,height=300,width=500,top=200,left=1100");
+ }
+ function konwersja()
+ {
+    window.open("konwersja.html","rodzaje okienek","toolbar=no,directories=no,menubar=no,height=250,width=500,top=200,left=1100");
+ }
+ </script>
 
+ <script type="text/javascript"> function show_alert() { alert("Uwaga!"); } </script> 
+
+ <script type="text/javascript"> 
+    function show_confirm() 
+    { 
+    var r=confirm("Naciśnij klawisz"); 
+    if (r==true) 
+    { document.write("Nacisnąłeś OK!"); } 
+    else 
+    { document.write("Nacisnąłeś Cancel!"); } 
+    } 
+   </script> 
+
+<script type="text/javascript"> 
+    function show_prompt() 
+    { 
+    var name=prompt("Napisz imię","Imię Nazwisko"); 
+    if (name!=null && name!="") 
+    { 
+    document.write("Witaj " + name + "! jak się masz?"); 
+    } 
+    } 
+    </script> 
+ </head>
 <body>
-    <div class="lol">
-        <p>BALCERSKI</p>
-    </div>
-
-    <form>
-        <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')">
-    </form>
-    <form>
-        <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')">
-    </form>
-    <form>
-        <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')">
-    </form>
+ <form>
+ <input type="button" name="przycisk" value="obraz 1" onclick="WinOpen(' ')">
+ <input type="button" name="przycisk" value="obraz 2" onclick="WinOpen1(' ')">
+ <input type="button" name="przycisk" value="obraz 3" onclick="WinOpen2(' ')">
+ <input type="button" name="przycisk" value="obraz 4" onclick="WinOpen3(' ')">
+ <input type="button" name="przycisk" value="Rodzaje Okienek" onclick="rodzajeOkienek(' ')">
+ <input type="button" name="przycisk" value="Konwersja Liczb" onclick="konwersja(' ')">
+ <input type="button" onclick="show_alert()" value="Pokaż Alert Box" /> 
+ <input type="button" onclick="show_confirm()" value="Pokaż confirm box" /> 
+ <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+ </form>
 </body>
-
 </html>

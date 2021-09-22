@@ -1,0 +1,20 @@
+<html>
+<body>
+<div style="color:green;font-size:34px;">
+ <script language="JavaScript">
+var D1_Ene=prompt("Dzien 1=","");
+var D2_Ene=prompt("Dzien 2=","");
+var G1_Ene=prompt("Godzina 1=","");
+var G2_Ene=prompt("Godzina 2=","");
+var dzien;
+var godzina;
+var czas;
+
+dzien=D2_Ene-D1_Ene;
+godzina=G2_Ene-G1_Ene;
+czas=(dzien*24*3600)+(godzina*3600);
+ document.write("Miedzy tymi dniami i godzinami minelo "+czas+" sekund");
+ </script>
+</div>
+</body>
+</html>

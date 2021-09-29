@@ -1,0 +1,22 @@
+<html>
+ <head>
+ <title>zad 14 Balc</title>
+ </head>
+ <body>
+  <div style="color:green;font-size:47px;">
+    <script language="JavaScript">
+        var n0_bal=prompt("Poda liczbe n0:","");
+        var t_bal = prompt("Podaj liczbe lat:","");
+        var t12_bal =prompt("Podaj liczbe T 1/2:","");
+        var n0=parseInt(n0_bal);
+        var t=parseInt(t_bal);
+        var  t12=parseInt(t12_bal);
+        var lambada = Math.log(2)/t12;
+        var lam = lambada.toFixed(7);
+        var nn = n0*(Math.pow((Math.E),(-lambada*t)));
+        var n = nn.toFixed(7);
+        document.write("N0 = "+n0+"[sztuk]<br>t = "+t+"[lat]<br>T1/2 = "+t12+"[lat]<br>Lambda = "+lam+"[1/rok]<br>"+"N = "+n+"[sztuk]");
+   </script>
+  </div>
+ </body>
+</html>

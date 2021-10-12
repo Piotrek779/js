@@ -1,0 +1,50 @@
+<html> 
+<head> 
+<title>
+ Przykład obliczenia V i Pc
+</title>
+ <script language="JavaScript">
+function Pole(a,b)
+{
+ a_liczba=parseFloat(a);
+ b_liczba=parseFloat(b);
+ Pole_wynik=a*b;
+ alert("Pole="+Pole_wynik.toFixed(2)+" cm^2"); 
+
+}
+function Obwod(a,b)
+{
+ a_liczba=parseFloat(a);
+ b_liczba=parseFloat(b);
+ Obw=2*a_liczba+2*b_liczba;
+ alert("Obw="+Obw.toFixed(2)+" cm");
+
+}
+ </script>
+</head> 
+<body> 
+Pobliczanie pola i obw prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="Pole(this.dl.value,this.wysokosc.value); 
+return false"> 
+Podaj a=
+<input size="6" name="dl">
+Podaj b=
+<input size="6" name="wysokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+</form>
+<br>
+<br>
+<form name="formularz2" action="..." onsubmit="Obwod(this.obw2.value,this.wysokosc2.value); 
+return false"> 
+a=
+<input size="6" name="obw2">
+b=
+<input size="6" name="wysokosc2">
+<input TYPE="submit" Value="oblicz" >
+</form>
+
+</body> 
+</html>
